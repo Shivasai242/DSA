@@ -14,6 +14,7 @@ public static int linearSearch(int numbers[], int key) {
 
     public static void main(String[] args) {
         int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16};
+        //String menu[] = {"dosa", "chole bhature", "samosa"};
         int key = 10;
 
         int index = linearSearch(numbers, key);

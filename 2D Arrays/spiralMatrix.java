@@ -21,7 +21,7 @@ public static void  printSpiral(int matrix[][]){
                 break;
             }
            
-            System.err.print(matrix[endRow][j]+" ");
+            System.out.print(matrix[endRow][j]+" ");
         }
         //left
         for(int i =endRow-1; i >= startRow+1; i--){
