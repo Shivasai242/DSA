@@ -21,7 +21,7 @@ public class sudoku {
         //3X3 grid
 
         for(int i=sr; i<sr+3; i++){
-            for(int j=sc; j<sr+3; j++){
+            for(int j=sc; j<sc+3; j++){
                 if(sudoku[i][j] == digit){
                     return false;
                 }
@@ -62,7 +62,7 @@ public class sudoku {
     public static void printSudoku(int sudoku[][]){
         for(int i=0; i<9; i++){
             for(int j=0; j<9; j++){
-                System.out.println(sudoku[i][j]+" ");
+                System.out.print(sudoku[i][j]+" ");
             }
             System.out.println();
         }
