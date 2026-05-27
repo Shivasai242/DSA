@@ -1,5 +1,5 @@
-public class recursionSearch {
-                            public static class Node {
+public class reverseLL {
+                                public static class Node {
         int data;
         Node next;
 
@@ -146,19 +146,34 @@ public class recursionSearch {
 
 
     }
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+
+        
+    }
     public static void main(String[] args) {
-        recursionSearch ll = new recursionSearch();
-        ll.addFirst(2);
+        reverseLL ll = new reverseLL();
+       ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(4);
         ll.addLast(5);
         ll.add(2, 3);
 
         ll.print();
-        System.out.println(ll.recSearch(3)); 
-        System.out.println(ll.recSearch(10)); 
+        ll.reverse();
+        ll.print();
 
     }
-
     
 }

@@ -1,5 +1,5 @@
-public class recursionSearch {
-                            public static class Node {
+public class removeNthNode {
+             public static class Node {
         int data;
         Node next;
 
@@ -146,8 +146,50 @@ public class recursionSearch {
 
 
     }
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+
+        
+    }
+    public void deleteNthfromEnd(int n){
+        //calculate size
+        int sz = 0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+            sz++;
+        }
+
+        if(n == sz){
+            head = head.next; //removeFirst
+            return;
+        }
+
+        //sz-n
+        int i = 1;
+        int iToFind = sz-n;
+        Node prev = head;
+        while(i < iToFind){
+            prev = prev.next;
+            i++;
+
+        }
+        prev.next = prev.next.next;
+        return;
+    }
     public static void main(String[] args) {
-        recursionSearch ll = new recursionSearch();
+        removeNthNode ll = new removeNthNode();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(4);
@@ -155,10 +197,9 @@ public class recursionSearch {
         ll.add(2, 3);
 
         ll.print();
-        System.out.println(ll.recSearch(3)); 
-        System.out.println(ll.recSearch(10)); 
+        ll.deleteNthfromEnd(3);
+        ll.print();
 
     }
-
     
 }
