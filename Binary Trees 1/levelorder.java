@@ -14,7 +14,7 @@ public class LevelOrder {
     static class BinaryTree {
         static int idx = -1;
 
-        public static Node buildTree(int[] nodes) {
+        public static Node buildTree(int nodes[]) {
             idx++;
 
             if (nodes[idx] == -1) {
