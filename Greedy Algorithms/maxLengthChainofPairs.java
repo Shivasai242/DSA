@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class maxLengthChainofPairs {
-    public static void main(String[] args) {
+    public static void main(String[] args) {   //o(nlogn)
         int pairs[][] = {{5, 24}, {39, 60}, {5, 28}, {27, 40}, {50,90}};
 
         Arrays.sort(pairs, Comparator.comparingInt(o -> o[1]));

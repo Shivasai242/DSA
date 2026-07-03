@@ -40,7 +40,6 @@ public class buildBST{
         }
 
         inorder(root);
-        //System.out.print();
 
 
     }
