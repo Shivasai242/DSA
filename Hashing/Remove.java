@@ -5,7 +5,7 @@ public class Remove {
         //create
         HashMap<String, Integer> hm = new HashMap<>();
 
-        //Inset  --O(1)
+        //Insert  --O(1)
         hm.put("India", 100);
         hm.put("China", 150);
         hm.put("US", 50);
@@ -23,8 +23,8 @@ public class Remove {
         // System.out.println(hm.containsKey("Indonesia"));  //false
 
         //Remove  O(1)
-        //System.out.println(hm.remove("China"));
-        System.out.println(hm.remove("Indonesia"));
+        System.out.println(hm.remove("China"));
+        //System.out.println(hm.remove("Indonesia"));
 
         System.out.println(hm);
 

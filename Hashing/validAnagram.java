@@ -5,9 +5,6 @@ public class validAnagram {
         if(s.length() != t.length()){
             return false;
         }
-        if (s.length() != t.length()) {
-            return false;
-        }
 
         HashMap<Character, Integer> map = new HashMap<>();
 

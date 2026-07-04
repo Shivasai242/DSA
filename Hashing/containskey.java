@@ -12,15 +12,16 @@ public class containskey {
 
         System.out.println(hm);
 
-        //Get --O(1)
-        int population = hm.get("India");
-        System.out.println(population);
+        // //Get --O(1)
+        // int population = hm.get("India");
+        // System.out.println(population);
 
-        System.out.println(hm.get("Indonesia"));
+        // System.out.println(hm.get("Indonesia"));
 
         //Containskey --O(1)
-        System.out.println(hm.containsKey("India"));
-        System.out.println(hm.containsKey("Indonesia"));
+        System.out.println(hm.containsKey("India"));  //true
+        System.out.println(hm.containsKey("Indonesia"));  //false
+
 
     }
     

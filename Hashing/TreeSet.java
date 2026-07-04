@@ -1,4 +1,4 @@
-public class LinkedHashSet {
+public class TreeSet {
         public static void main(String[] args) {
         java.util.HashSet<String> cities = new java.util.HashSet<>();
             cities.add("Delhi");

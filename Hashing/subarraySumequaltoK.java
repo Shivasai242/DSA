@@ -10,7 +10,7 @@ public class subarraySumequaltoK {
         int sum = 0;
         int ans = 0;
 
-        for(int j=0; j<arr.length; j++){
+        for(int j=0; j<arr.length; j++){  //O(n)
             sum += arr[j]; //sum(j)
             if(map.containsKey(sum -k)){
                 ans += map.get(sum-k);

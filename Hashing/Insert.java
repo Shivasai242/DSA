@@ -4,7 +4,7 @@ public class Insert {
         //create
         HashMap<String, Integer> hm = new HashMap<>();
 
-        //Inset
+        //Inset  --O(1)
         hm.put("India", 100);
         hm.put("China", 150);
         hm.put("US", 50);

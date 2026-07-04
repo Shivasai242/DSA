@@ -9,7 +9,7 @@ public class ItineraryForTickets {
 
         for (String key : tickets.keySet()) {
             if(!revMap.containsKey(key)){
-                return key;  //Startin point
+                return key;  //Starting point
             }
         }
         return null;
