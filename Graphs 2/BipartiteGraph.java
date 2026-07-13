@@ -42,7 +42,8 @@ public class BipartiteGraph {
 
         for(int i=0; i<graph.length; i++){
             if(col[i] == -1){  //BFS
-                q.add(i);col[i] = 0; //yellow
+                q.add(i);
+                col[i] = 0; //yellow
                 while(!q.isEmpty()){
                     int curr = q.remove();
                     for(int j=0; j<graph[curr].size(); j++){
